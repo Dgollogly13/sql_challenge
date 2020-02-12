@@ -1,3 +1,5 @@
+-- Create custom tables, so data may be imported 
+
 CREATE TABLE departments(
 	department_number VARCHAR(30),
 	department_name VARCHAR(30));
@@ -47,7 +49,7 @@ FROM employees as e
 	INNER JOIN salaries as s ON
 e.employee_number=s.employee_number;
 
--- 2. List employees who were hired in 1986. ****
+-- 2. List employees who were hired in 1986.
 
 SELECT e.employee_number, e.last_name, e.first_name, e.gender
 	FROM employees as e 
