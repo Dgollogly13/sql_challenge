@@ -47,7 +47,11 @@ FROM employees as e
 	INNER JOIN salaries as s ON
 e.employee_number=s.employee_number;
 
+<<<<<<< HEAD
 -- 2. List employees who were hired in 1986.
+=======
+-- 2. List employees who were hired in 1986. ****
+>>>>>>> 45cb7309d535f2c25541ecc97b0a8fdeada353aa
 
 SELECT e.employee_number, e.last_name, e.first_name, e.gender
 	FROM employees as e 
@@ -93,7 +97,10 @@ LEFT JOIN departments
 WHERE departments.department_name lIKE 'Sales';
 
 -- 8. In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
+<<<<<<< HEAD
 
+=======
+>>>>>>> 45cb7309d535f2c25541ecc97b0a8fdeada353aa
 SELECT employees.last_name,
 	COUNT(last_name) AS "name_count"
 FROM employees
